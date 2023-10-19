@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Food Ordering</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .menu-item img {
+            max-width: 100px;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+
+        .order-summary {
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+            padding-top: 10px;
+        }
+
+        .order-summary ul {
+            padding: 0;
+        }
+
+        .order-summary li {
+            list-style-type: none;
+            margin-bottom: 10px;
+        }
+
+        .box {
+            background-color: #FFEB3B; /* Yellow */
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .box.special-offer {
+            background-color: #FF9800; /* Orange */
+        }
+
+        .box h2 {
+            color: #333;
+        }
+
+        button {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Darker Green */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                width: 100%;
+            }
+
+            .menu-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .menu-item img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Food Ordering <span>Services</span></h1>
+    </header>
+
+    <section>
+        <div class="box">
+            <img src="food.jpg" alt="Photos">
+            <h2>Welcome to our Food Ordering Service!</h2>
+            <p>Explore our delicious menu and place your order online. We are providing the best food the are prepared nearest to you and all your fvrt food will be delivered.</p>
+        </div>
+
+        <div class="box">
+            <h2>Menu</h2>
+
+            <div class="menu-item">
+                <img src="https://unsplash.com/images/food" alt="Burger">
+                <div>
+                    <h3>Burger</h3>
+                    <span>$5.99</span>
+                    <input type="number" value="0" min="0">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://unsplash.com/images/food" alt="Pizza">
+                <div>
+                    <h3>Pizza</h3>
+                    <span>$8.99</span>
+                    <input type="number" value="0" min="0">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://unsplash.com/images/food" alt="Pasta">
+                <div>
+                    <h3>Pasta</h3>
+                    <span>$7.49</span>
+                    <input type="number" value="0" min="0">
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://unsplash.com/images/food" alt="Salad">
+                <div>
+                    <h3>Salad</h3>
+                    <span>$4.99</span>
+                    <input type="number" value="0" min="0">
+                </div>
+            </div>
+
+            <!-- Add more menu items as needed -->
+        </div>
+
+        <div class="box order-summary">
+            <h2>Order Summary</h2>
+
+            <ul>
+                <!-- Order summary will be displayed here -->
+            </ul>
+
+            <button onclick="placeOrder()">Place Order</button>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Enhanced Food Ordering
+    </footer>
+
+    <script>
+        function placeOrder() {
+            // Implement order placement logic here
+            alert('Order placed successfully!');
+        }
+    </script>
+
+</body>
+</html>
